@@ -66,9 +66,7 @@ Figure 3 shows that there is <b>a linear relationship (Hyper-plane) between Prio
     <td><img img src='./Model A/images/ModelA_PDP_Prior_Default_Income.jpg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Years_Employed.jpg' width="500" height="250"></td>
   </tr>
-  
-
- </table>
+  </table>
  <p align = "center">Figure 4: Two features interacting PDP (Model A) </p>
  
  
@@ -129,4 +127,41 @@ To Summarize what I explored:
 * <b>Any change</b> from one to zero in the Prior Default increases significantly the predicted probability of getting approved for credit beyond the values of other features.
 * <b>A low credit score</b> increases the likelihood of having a prior default.
 * <b>Prior Default and Credit Score</b> are the two most important features to the final result (confirmed by Figure 2 and Table 1). 
+
+### 2.2 Data Instance Analysis
+
+LIME was first used to explain each individual prediction of three instances for this section. Figure 6 presents the explanations of each three instances based on LIME. 
+
+<table align = "center">
+  <tr>
+    <td><img img src='./Model A/images/ModelA_X_test_inctances1.png' width="500" height="100"></td> 
+    <td><img src='./Model A/images/ModelA_X_test_inctances2.png' width="500" height="100"></td>
+    <td><img src='./Model A/images/ModelA_X_test_inctances3.png' width="500" height="100"></td>
+  </tr>
+  </table>
+ <p align = "center">Figure 6: LIME on each three instances (Model A) </p>
+ 
+ Figure 6 show that the most important feature for all three instances is Prior Default, which significantly affects the prediction. Based on my assumption in section 1,<b>I changed the prior default value from 1 to 0 or 0 to 1 in all data instances resulting in a reverse decision (Figure 7) </b>. 
+ 
+ <table align = "center">
+  <tr>
+    <td><img img src='./Model A/images/ModelA_X_test_inctances1_1To0.png' width="500" height="100"></td> 
+    <td><img src='./Model A/images/ModelA_X_test_inctances2_0To1.png' width="500" height="100"></td>
+    <td><img src='./Model A/images/ModelA_X_test_inctances3_1To0.png' width="500" height="100"></td>
+  </tr>
+  </table>
+ <p align = "center">Figure 7: Impact of change in the Prior default value of all data instances on LIME (Model A)</p>
+
+ To put them succinctly:
+ 
+
+* <b>The first instance</b> that has a prior default value of 1, the model does not approve credit with a probability of 0.78 percent. If only the prior default value changes from 1 to 0, the credit will be approved by the model with a probability of 0.93 percent. 
+
+* <b>The second instance</b>, which has a prior default value of 0, the model will approve the credit with a probability of 0.93 percent. If only the prior default value changes from 0 to 1, the model will not approve the credit with a probability of 0.78 percent.   
+
+* <b>The third instance</b>, which has a prior default value of 1, the credit will not also be approved by the model with a probability of 0.78 percent. If only the prior default value changes from 1 to 0, the credit is approved by the model with a probability of 0.93 percent.  
+
+
+
+
 
