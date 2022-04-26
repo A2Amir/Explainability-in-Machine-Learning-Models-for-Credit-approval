@@ -1,4 +1,4 @@
-# Explainability in Machine Learning Models for Credit approval
+# Explainability in Machine Learning Models for Credit Approval
 
 
 ## 1. ABSTRACT
