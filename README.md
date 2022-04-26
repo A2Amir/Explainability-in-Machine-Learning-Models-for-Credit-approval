@@ -116,7 +116,17 @@ In the next step, Permutation Feature Importance was used to explain the importa
   <p align = "center"> Table 1: Permutation Feature Importance (Model A)</p>
 
 
-In the last step, I have utilized the library SHAP (Shapley Additive exPlanations) for my analyses and used SHAP Summary Plot (Figure 5) to detect  the greatest influence on the predictions for the two classes. The SHAP Summary Plot (Figure 5) indicates that Prior Default had the greatest influence on the predictions for all two classes, followed by Credit Score. This makes sense - these are two of the most important features in predicting whether someone will be approved for credit or not. To Summarize what I explored:
+In the last step, I have utilized the library SHAP (Shapley Additive exPlanations) for my analyses and used SHAP Summary Plot (Figure 5) to detect  the greatest influence on the predictions for the two classes. The SHAP Summary Plot (Figure 5) indicates that Prior Default had the greatest influence on the predictions for all two classes, followed by Credit Score. This makes sense - these are two of the most important features in predicting whether someone will be approved for credit or not. 
 
 <p align = "center"><img src='./Model A/images/SHOP_Summary_plot.png'  width="500" height="250"></p>
 <p align = "center"> Figure 5: SHAP Summary Plot (Model A) </p>
+
+To Summarize what I explored:
+
+
+* <b>The SVM</b> is a type of Non-linear SVMs. 
+* <b>Prior Default of 1</b> significantly increases the likelihood that the credit will not be approved by about 70 percent (first explanation).
+* <b>Any change</b> from one to zero in the Prior Default increases significantly the predicted probability of getting approved for credit beyond the values of other features.
+* <b>A low credit score</b> increases the likelihood of having a prior default.
+* <b>Prior Default and Credit Score</b> are the two most important features to the final result (confirmed by Figure 2 and Table 1). 
+
