@@ -115,3 +115,8 @@ In the next step, Permutation Feature Importance was used to explain the importa
  </table>
   <p align = "center"> Table 1: Permutation Feature Importance (Model A)</p>
 
+
+In the last step, I have utilized the library SHAP (Shapley Additive exPlanations) for my analyses and used SHAP Summary Plot (Figure 5) to detect  the greatest influence on the predictions for the two classes. The SHAP Summary Plot (Figure 5) indicates that Prior Default had the greatest influence on the predictions for all two classes, followed by Credit Score. This makes sense - these are two of the most important features in predicting whether someone will be approved for credit or not. To Summarize what I explored:
+
+<p align = "center"><img src='./Model A/images/SHOP_Summary_plot.png'  width="500" height="250"></p>
+<p align = "center"> Figure 5: SHAP Summary Plot (Model A) </p>
