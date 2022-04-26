@@ -29,24 +29,19 @@ In the second step, to investigate the impact of features on the decision bounda
 
 <table align = "center">
   <tr>
-    <td><img img src='./Model A/images/ModelA_PDP_Credit_Score.svg' width="500" height="250"></td>
-    <td><img src='./Model A/images/ModelA_PDP_Debt.svg' width="500" height="250"></td>
-    <td><img src='./Model A/images/ModelA_PDP_Employed.svg' width="500" height="250"></td>
-  </tr>
-    <tr>
-    <td><img img src='./Model A/images/ModelA_PDP_Income.svg' width="500" height="250"></td>
-    <td><img src='./Model A/images/ModelA_PDP_Years_Employed.svg' width="500" height="250"></td>
-    <td><img src='./Model A/images/ModelA_PDP_Prior_Default.svg' width="500" height="250"></td>
+    <td><img img src='./Model A/images/ModelA_PDP_Credit_Score.svg' width="500" height="150"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Debt.svg' width="500" height="150"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Employed.svg' width="500" height="150"></td>
+    <td><img img src='./Model A/images/ModelA_PDP_Income.svg' width="500" height="150"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Years_Employed.svg' width="500" height="150"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default.svg' width="500" height="150"></td>
   </tr>
   </table>
    <p align = "center"> Figure 2: Partial Dependence Plot per feature (Model A) </p>
 
 
 
-In the third step, <b>the partial dependence plot for two features that interact with respect to the outcome</b> is presented in two different ways. First, in Figure 3, Prior Default against Employed, Years Employed, Income, Debt, and  Credit Score are plotted in 3D. Second, the heatmaps in Figure 4. Figure 3 shows that there is <b>a linear relationship (Hyper-plane) between Prior Default and all other features, namely Employed, Years Employed, Income, Debt, Credit Score</b>. Any change from one to zero in the Prior Default significantly increases the predicted probability of getting approved for credit beyond the values of other features. Suppose the Prior Default has a value of one, the predicted probability decreases. Between the Prior Default feature and all other features, there is an interaction.
-
-
-
+In the third step, <b>the partial dependence plot for two features that interact with respect to the outcome</b> is presented in two different ways. First, in Figure 3, Prior Default against Employed, Years Employed, Income, Debt, and  Credit Score are plotted in 3D. Second, the heatmaps in Figure 4. 
 
 <table align = "center">
   <tr>
@@ -61,3 +56,17 @@ In the third step, <b>the partial dependence plot for two features that interact
  </table>
  <p align = "center">Figure 3: Two features interacting PDP (Model A) </p>
 
+Figure 3 shows that there is <b>a linear relationship (Hyper-plane) between Prior Default and all other features, namely Employed, Years Employed, Income, Debt, Credit Score</b>. Any change from one to zero in the Prior Default significantly increases the predicted probability of getting approved for credit beyond the values of other features. Suppose the Prior Default has a value of one, the predicted probability decreases. Between the Prior Default feature and all other features, there is an interaction.
+
+<table align = "center">
+  <tr>
+    <td><img img src='./Model A/images/ModelA_PDP_Prior_Default_Credit_Score.jpg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Debt.jpg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Employed.jpg' width="500" height="250"></td>
+    <td><img img src='./Model A/images/ModelA_PDP_Prior_Default_Income.jpg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Years_Employed.jpg' width="500" height="250"></td>
+  </tr>
+  
+
+ </table>
+ <p align = "center">Figure 4: Two features interacting PDP (Model A) </p>
