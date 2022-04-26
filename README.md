@@ -20,7 +20,7 @@ borrow money, you can take steps toward improving your score and increasing your
 In the first step, to inspect the model's decision boundary, which is a Support Vector Machine for a binary classification task, I visualized the decision regions of the model for pairs of features in 2 dimensions (Figure 1) . As a binary classification task, because all dataset features are fairly easily separable and normalized between zero and one, the SVM performs almost equally well and scores around 0.867 on the test dataset. However, <b> their respective decision boundary looks different from each other so that they cannot be separated with a single straight line meaning SVM is a type of Non-linear SVM </b>.
 
 
-<p align = "center"><img src='./Model A/images/ModelA_DecisionBoundary.svg' alt="the satellite images and the corresponding labels" width="1000" height="500"></p>
+<p align = "center"><img src='./Model A/images/ModelA_DecisionBoundary.svg' width="700" height="250"></p>
 <p align = "center"> Figure 1: SVM Decision Boundary (Model A) </p>
 
 In the second step, to investigate the impact of features on the decision boundaries of the support vector machine, I used a Partial Dependence Plot per feature. PDP tells us how each feature contributes to the prediction. It also reveals which features are more important for accurate predictions. PDPs for Employed, Years Employed, Income, Debt, Credit Score, and Prior Default are shown in Figure 2. The most significant differences can be seen in the Prior Default. A credit default is a situation in which a borrower fails to make payments on their debt obligations. If <b>one has defaulted in the past, the probability that its credit will be confirmed drops significantly by about 70 percent</b>.
