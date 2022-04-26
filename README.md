@@ -9,3 +9,7 @@ C) which are train on the Credit Approval Dataset. The study also found that eac
 Score in Model A, Income in Model B, and Employed in Model C to decide about approving credit. This information is valuable
 for consumers who are looking to get approved for new lines of credit. By understanding how defaults can impact your ability to
 borrow money, you can take steps toward improving your score and increasing your chances of being approved.
+
+
+## 2. MODEL A
+
