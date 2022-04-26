@@ -70,3 +70,48 @@ Figure 3 shows that there is <b>a linear relationship (Hyper-plane) between Prio
 
  </table>
  <p align = "center">Figure 4: Two features interacting PDP (Model A) </p>
+ 
+ 
+In the next step, Permutation Feature Importance was used to explain the importance of each feature in getting approved with the support vector machine (Table 1). As seen in Table 1, the most important feature was Prior Default, and the least important was Employed.
+
+
+
+<table align = "center">
+  <tr>
+    <td>Name</td>
+     <td>Importance</td>
+     <td>Importance STD</td>
+  </tr>
+  <tr>
+    <td>Prior Default </td>
+    <td>0.3738  </td>
+    <td> +/- 0.034</td>
+  </tr>
+  <tr>
+    <td> Credit Score  </td>
+    <td>0.0005 </td>
+    <td>  +/- 0.001 </td>
+  </tr>
+  <tr>
+    <td> Debt </td>
+    <td> 0.0004  </td>
+    <td> +/- 0.001</td>
+  </tr>
+    <tr>
+    <td> Income </td>
+    <td> 0.0003  </td>
+    <td> +/- 0.001</td>
+  </tr>
+    <tr>
+    <td> Years Employed </td>
+    <td> 0.0002  </td>
+    <td> +/- 0.001</td>
+  </tr>
+      <tr>
+    <td> Employed </td>
+    <td> 0.0001  </td>
+    <td> +/- 0.001</td>
+  </tr>
+ </table>
+  <p align = "center"> Table 1: Permutation Feature Importance (Model A)</p>
+
