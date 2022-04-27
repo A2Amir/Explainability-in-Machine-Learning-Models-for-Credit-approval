@@ -119,7 +119,7 @@ In the last step, I have utilized the library SHAP (Shapley Additive exPlanation
 <p align = "center"><img src='./Model A/images/SHOP_Summary_plot.png'  width="500" height="250"></p>
 <p align = "center"> Figure 5: SHAP Summary Plot (Model A) </p>
 
-To Summarize what I explored:
+To Summarize what I have explored:
 
 
 * <b>The SVM</b> is a type of Non-linear SVMs. 
@@ -201,13 +201,7 @@ In the third step, the Global Surrogate method was applied to validate the hypot
 <p align = "center"> Figure 11: Global Surrogate method (Model C)</p>
 
 
-<b>The partial dependence plot for two features interacting towards the final output</b> is plotted in the last step. Here the Prior Default against Employed, Years Employed, Income, Debt, and Credit Score is shown in Figure 12. To Summarize what we explored in the previous steps:
-
-* <b>The MLP Classifier</b> is a type of linear classifier. 
-* <b>Prior Default of 1</b> has the most prominent negative influence on the prediction about 70 percent (first explanation). 
-* <b>Employed of 1</b> contributes positively (about 15 percent) to the prediction (second explanation). 
-* <b>Prior Default and Employed</b> are the two most important features to the final result (confirmed by Figures 10 and 11). 
-
+<b>The partial dependence plot for two features interacting towards the final output</b> is plotted in the last step. Here the Prior Default against Employed, Years Employed, Income, Debt, and Credit Score is shown in Figure 12. 
 
 <table align = "center">
   <tr>
@@ -220,6 +214,13 @@ In the third step, the Global Surrogate method was applied to validate the hypot
   </tr>
   </table>
  <p align = "center">Figure 11: Two features interacting PDP (Model C) </p>
+
+To Summarize what I have  explored in this steps:
+
+* <b>The MLP Classifier</b> is a type of linear classifier. 
+* <b>Prior Default of 1</b> has the most prominent negative influence on the prediction about 70 percent (first explanation). 
+* <b>Employed of 1</b> contributes positively (about 15 percent) to the prediction (second explanation). 
+* <b>Prior Default and Employed</b> are the two most important features to the final result (confirmed by Figures 10 and 11). 
 
 ## 5. Conclusion
 
