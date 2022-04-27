@@ -213,7 +213,7 @@ In the third step, the Global Surrogate method was applied to validate the hypot
 
   </tr>
   </table>
- <p align = "center">Figure 11: Two features interacting PDP (Model C) </p>
+ <p align = "center">Figure 12: Two features interacting PDP (Model C) </p>
 
 To Summarize what I have  explored in this steps:
 
@@ -229,8 +229,8 @@ Global interpretation techniques (Partial Dependence Plot, Accumulated Local Eff
 
 * <b>What to learn from the explanations obtained for the three different data instances in Section 2.2:</b> based on Figures 6, and 7, the most important feature for all three instances is Prior Default, which significantly affects the prediction. Any change in the Prior Default value from 1 to 0 or 0 to 1 of all data instances resulting in a reverse decision.
 
-* <b>The difference between these three models:</b> The first important difference between the models can be explained as a characteristic of the model that treats the data in the form of linearity or non-linearity. While both versions of Model A and Model B are nonlinear models, Model C is a type of linear model. Linear models assume a linear relationship between the input and output variables, while non-linear models do not. This difference is important because it affects how well a model can predict future values of the output variable. The second important difference can be described as the importance of different features in each model, such as Credit Score in Model A, Income in Model B, and Employed in Model C to decide on approving credit.
+* <b>The difference between these three models:</b> the first important difference between the models can be explained as a characteristic of the model that treats the data in the form of linearity or non-linearity. While both versions of Model A and Model B are nonlinear models, Model C is a type of linear model. Linear models assume a linear relationship between the input and output variables, while non-linear models do not. This difference is important because it affects how well a model can predict future values of the output variable. The second important difference can be described as the importance of different features in each model, such as Credit Score in Model A, Income in Model B, and Employed in Model C to decide on approving credit.
 
-* <b>Where models make the same decision, where they differ:</b> as discussed and shown in Figures  5, 4, and 12, Models A, B, and C take into account prior defaults more strongly. That is the point at which Model A, B, and C make the same decision. While Credit Score is the second most important feature in model A, model B places more emphasis on Income, and model C emphasizes Employed. That is the point where the models do differ. <b>It is interesting to point out that in both models (A and C), the probability of an approved credit decreases when the values of the three features namely Income, Years Employed, Credit Score reach the last high value (light green areas in Figures 4 and 12</b>.
+* <b>Where models make the same decision, where they differ:</b> as discussed and shown, Models A, B, and C take into account prior defaults more strongly. That is the point at which Model A, B, and C make the same decision. While Credit Score is the second most important feature in model A, model B places more emphasis on Income, and model C emphasizes Employed. That is the point where the models do differ. <b>It is interesting to point out that in both models (A and C), the probability of an approved credit decreases when the values of the three features namely Income, Years Employed, Credit Score reach the last high value (light green areas in Figures 4 and 12</b>.
 
 
