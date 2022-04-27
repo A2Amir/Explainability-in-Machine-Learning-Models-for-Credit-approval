@@ -199,3 +199,27 @@ In the third step, the Global Surrogate method was applied to validate the hypot
 
 <p align = "center"><img src='./Model C/images/ModelC_Global Surrogate.png' width="500" height="200"></p>
 <p align = "center"> Figure 11: Global Surrogate method (Model C)</p>
+
+
+<b>The partial dependence plot for two features interacting towards the final output</b> is plotted in the last step. Here the Prior Default against Employed, Years Employed, Income, Debt, and Credit Score is shown in Figure 12. To Summarize what we explored in the previous steps:
+
+* <b>The MLP Classifier</b> is a type of linear classifier. 
+* <b>Prior Default of 1</b> has the most prominent negative influence on the prediction about 70 percent (first explanation). 
+* <b>Employed of 1</b> contributes positively (about 15 percent) to the prediction (second explanation). 
+* <b>Prior Default and Employed</b> are the two most important features to the final result (confirmed by Figures 10 and 11). 
+
+
+<table align = "center">
+  <tr>
+    <td><img src='./Model C/images/ModelC_PDP_Prior_Default_Credit_Score.jpg' width="500" height="250"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Prior_Default_Debt.jpg' width="500" height="250"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Prior_Default_Employed.jpg' width="500" height="250"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Prior_Default_Income.jpg' width="500" height="250"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Prior_Default_Years_Employed.jpg' width="500" height="250"></td>
+
+  </tr>
+  </table>
+ <p align = "center">Figure 11: Two features interacting PDP (Model C) </p>
+
+## 5. Conclusion
+
