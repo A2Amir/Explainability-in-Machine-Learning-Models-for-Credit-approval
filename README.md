@@ -29,10 +29,10 @@ In the second step, to investigate the impact of features on the decision bounda
 
 <table align = "center">
   <tr>
-    <td><img img src='./Model A/images/ModelA_PDP_Credit_Score.svg' width="500" height="150"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Credit_Score.svg' width="500" height="150"></td>
     <td><img src='./Model A/images/ModelA_PDP_Debt.svg' width="500" height="150"></td>
     <td><img src='./Model A/images/ModelA_PDP_Employed.svg' width="500" height="150"></td>
-    <td><img img src='./Model A/images/ModelA_PDP_Income.svg' width="500" height="150"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Income.svg' width="500" height="150"></td>
     <td><img src='./Model A/images/ModelA_PDP_Years_Employed.svg' width="500" height="150"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default.svg' width="500" height="150"></td>
   </tr>
@@ -45,10 +45,10 @@ In the third step, <b>the partial dependence plot for two features that interact
 
 <table align = "center">
   <tr>
-    <td><img img src='./Model A/images/ModelA_PDP_Prior_Default and Credit_Score Interaction DPD.svg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default and Credit_Score Interaction DPD.svg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default and Debt Interaction DPD.svg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default and Employed Interaction DPD.svg' width="500" height="250"></td>
-    <td><img img src='./Model A/images/ModelA_PDP_Prior_Default and Income Interaction DPD.svg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default and Income Interaction DPD.svg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default and Years_Employed Interaction DPD.svg' width="500" height="250"></td>
   </tr>
   
@@ -60,10 +60,10 @@ Figure 3 shows that there is <b>a linear relationship (Hyper-plane) between Prio
 
 <table align = "center">
   <tr>
-    <td><img img src='./Model A/images/ModelA_PDP_Prior_Default_Credit_Score.jpg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Credit_Score.jpg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Debt.jpg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Employed.jpg' width="500" height="250"></td>
-    <td><img img src='./Model A/images/ModelA_PDP_Prior_Default_Income.jpg' width="500" height="250"></td>
+    <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Income.jpg' width="500" height="250"></td>
     <td><img src='./Model A/images/ModelA_PDP_Prior_Default_Years_Employed.jpg' width="500" height="250"></td>
   </tr>
   </table>
@@ -134,7 +134,7 @@ LIME was first used to explain each individual prediction of three instances for
 
 <table align = "center">
   <tr>
-    <td><img img src='./Model A/images/ModelA_X_test_inctances1.png' width="500" height="100"></td> 
+    <td><img src='./Model A/images/ModelA_X_test_inctances1.png' width="500" height="100"></td> 
     <td><img src='./Model A/images/ModelA_X_test_inctances2.png' width="500" height="100"></td>
     <td><img src='./Model A/images/ModelA_X_test_inctances3.png' width="500" height="100"></td>
   </tr>
@@ -177,3 +177,25 @@ In the first step, to investigate the decision boundaries of the model, which is
 
 <p align = "center"><img src='./Model C/images/ModelC_DecisionBoundary.svg' width="600" height="250"></p>
 <p align = "center"> Figure 9: Decision Boundary for MLP classifier (Model C)</p>
+
+In the second step, to investigate the influence of the features on the decision of the MLP classifier, I used a partial dependency diagram per feature. As can be seen in Figure 10, <b> on the one hand, Prior Default has the most significant negative influence on the prediction (about 70 percent), on the other hand, Employed contributes positively (about 15 percent) to the prediction</b>.
+
+
+<table align = "center">
+  <tr>
+    <td><img src='./Model C/images/ModelC_PDP_Credit_Score.svg' width="500" height="100"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Debt.svg' width="500" height="100"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Employed.svg' width="500" height="100"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Income.svg' width="500" height="100"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Years_Employed.svg' width="500" height="100"></td>
+    <td><img src='./Model C/images/ModelC_PDP_Prior_Default.svg' width="500" height="100"></td>
+
+  </tr>
+  </table>
+ <p align = "center">Figure 10: Partial Dependence Plot per feature (Model C) </p>
+ 
+
+In the third step, the Global Surrogate method was applied to validate the hypotheses obtained in the second section on the two most important features to the final result, which are Prior Default and Employed. As  shown in Figure 11, <b>the hypotheses were confirmed by the Global Surrogate method</b>. The output of the method depends on what kind of surrogate we have chosen. In this case, since I chose a LinearExplainableModel with a classification problem, the output shows the coefficients of a logistic regression model.
+
+<p align = "center"><img src='./Model C/images/ModelC_Global Surrogate.png' width="500" height="200"></p>
+<p align = "center"> Figure 11: Global Surrogate method (Model C)</p>
