@@ -229,4 +229,6 @@ Global interpretation techniques (Partial Dependence Plot, Accumulated Local Eff
 
 * <b>Where models make the same decision, where they differ:</b> as discussed and shown, Models A, B, and C take into account prior defaults more strongly. That is the point at which Model A, B, and C make the same decision. While Credit Score is the second most important feature in model A, model B places more emphasis on Income, and model C emphasizes Employed. That is the point where the models do differ. <b>It is interesting to point out that in both models (A and C), the probability of an approved credit decreases when the values of the three features namely Income, Years Employed, Credit Score reach the last high value (light green areas in Figures 4 and 12</b>.
 
+## 6. Reference
 
+* ## [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
