@@ -3,15 +3,11 @@
 
 ## 1. Abstract
 
-Defaulting on credit can significantly impact your ability to borrow money in the future. In this study, we found that a prior default de-
-creases the chance of getting credit by 70 percent. This explanation is based on the analysis of three machine learning models (A, B, and
-C) which are train on the Credit Approval Dataset. The study also found that each model emphasizes different features such as Credit
-Score in Model A, Income in Model B, and Employed in Model C to decide about approving credit. This information is valuable
-for consumers who are looking to get approved for new lines of credit. By understanding how defaults can impact your ability to
+Defaulting on credit can significantly impact your ability to borrow money in the future. In this study, we found that a prior default decreases the chance of getting credit by 70 percent. This explanation is based on the analysis of three machine learning models (A, B, and C) which are train on the Credit Approval Dataset. The study also found that each model emphasizes different features such as Credit Score in Model A, Income in Model B, and Employed in Model C to decide about approving credit. This information is valuable for consumers who are looking to get approved for new lines of credit. By understanding how defaults can impact your ability to
 borrow money, you can take steps toward improving your score and increasing your chances of being approved.
 
 
-## 2. Model A
+## 2. [Model A](https://github.com/A2Amir/Explainability-in-Machine-Learning-Models-for-Credit-approval/blob/main/Model%20A/Model%20A.ipynb)
 
 
 
@@ -162,7 +158,7 @@ LIME was first used to explain each individual prediction of three instances for
 * <b>The third instance</b>, which has a prior default value of 1, the credit will not also be approved by the model with a probability of 0.78 percent. If only the prior default value changes from 1 to 0, the credit is approved by the model with a probability of 0.93 percent.  
 
 
-## 3. Model B
+## 3. [Model B](https://github.com/A2Amir/Explainability-in-Machine-Learning-Models-for-Credit-approval/blob/main/Model%20B/Model%20B.ipynb)
 
 
 In the first step, to investigate the decision boundaries of model B, which is also a Support Vector Machine (SVM) for a binary classification task, Accumulated local effect was used to detect how features influence the prediction of the model on average. Figure 8 presents ALE plots for the approval prediction model by Employed, Years Employed, Income, Debt, Credit Score, and Prior Default. The Prior Default has a strong effect on the prediction. The average prediction significantly rises with changing Prior Default from 1 to 0. Income has a positive effect: When above 1 percent, the higher the relative Income, the higher the prediction. The Employed and Debt do not affect the predictions much.
@@ -170,7 +166,7 @@ In the first step, to investigate the decision boundaries of model B, which is a
 <p align = "center"><img src='./Model B/images/ModelB_AccumulatedLocalEffects.png' width="600" height="250"></p>
 <p align = "center"> Figure 8: Accumulated Local Effects for SVM (Model B) </p>
 
-## 4. Model C
+## 4. [Model C](https://github.com/A2Amir/Explainability-in-Machine-Learning-Models-for-Credit-approval/blob/main/Model%20C/Model%20C.ipynb)
 
 In the first step, to investigate the decision boundaries of the model, which is a deep multi-layer perceptron (MLP) classifier for a binary classification task, I plotted the decision ranges of the model for feature pairs in 2 dimensions. Since all features in the dataset are relatively easily separable and normalized between zero and one, the MLP classifier performs almost equally well, with a score of 0.867 for the test dataset.<b>As seen in Figure 9, the respective decision boundaries are similar so that they can be separated with a single straight line, which means that the MLP classifier belongs to linear classifiers</b>.
 
